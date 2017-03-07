@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>ICGVideoTrimmer</id>
+    <version>1.1.0</version>
+    <title>ICGVideoTrimmer iOS</title>
+    <description>Xamarin iOS Binding for ICGVideoTrimmer</description>
+    <authors>$authors$</authors>
+    <owners>$owners$</owners>
+    <requireLicenseAcceptance>$requireLicenseAcceptance$</requireLicenseAcceptance>
+    <copyright>$copyright$</copyright>
+    <projectUrl>$projectUrl$</projectUrl>    
+    <licenseUrl>$licenceUrl$</licenseUrl>
+    <releaseNotes>$releaseNotes$</releaseNotes>
+    <tags>$tags$</tags>
+  </metadata>
+  <files>
+    <file src="Libraries/ICGVideoTrimmer/iOS/Binding/bin/Release/ICGVideoTrimmerBindingIOS.dll" target="lib\Xamarin.iOS10" />
+  </files>
+</package>
