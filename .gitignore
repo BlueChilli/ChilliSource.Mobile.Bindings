@@ -195,6 +195,9 @@ UpgradeLog.*
 *.metaproj*
 
 Native*
-Instabug/iOS/Binding/Instabug.framework
-Instabug/iOS/Binding/Resources/Instabug.bundle
-ICGVideoTrimmer/Binding/ICGVideoTrimmer.framework
+**/iOS/Binding/*.framework
+**/iOS/Binding/Resources/*.bundle
+*/Binding/*.framework
+
+artifacts/
+tools/
