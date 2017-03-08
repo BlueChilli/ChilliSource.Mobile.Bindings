@@ -195,7 +195,6 @@ UpgradeLog.*
 *.metaproj*
 
 Native*
-**/iOS/Binding/*.framework
 **/iOS/Binding/Resources/*.bundle
 */Binding/*.framework
 
