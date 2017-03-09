@@ -111,8 +111,7 @@ Action<string, string> Package = (nuspec, basePath) =>
         Copyright                = "BlueChilli Copyright 2016",
         RequireLicenseAcceptance = false,
 
-        Version                  = nugetVersion,
-        Tags                     = new [] {  "ChilliSource", "Xamarin"},
+        Tags                     = new [] {  "ChilliSource", "ChilliSource Xamarin Bindings", "Xamarin"},
         ReleaseNotes             = new [] { string.Format("{0}/releases", githubUrl) },
 
         Symbols                  = false,
