@@ -314,7 +314,7 @@ Task("Package")
 		foreach(var package in packageWhitelist)
 		{
 			// only push the package which was created during this build run.
-			var packagePath = string.Format("./Nuget/{0}.nuspec", package);
+			var packagePath = string.Format("./Nuget/{0}.nuspec", package.Replace("IOS"));
 
 			// Push the package.
 			Package(packagePath, "./");
