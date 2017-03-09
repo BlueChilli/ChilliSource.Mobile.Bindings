@@ -22,6 +22,7 @@ copy :
 
 
 clean :
+	rm -rf ./Binding/*.framework
 	rm -rf ./$(BINDINGPROJECTFOLDER)/*.cs
 	rm -rf $(WorkingDirectry)
 	
