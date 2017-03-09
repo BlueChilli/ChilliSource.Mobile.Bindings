@@ -111,8 +111,7 @@ Action<string, string> Package = (nuspec, basePath) =>
         Copyright                = "BlueChilli Copyright 2016",
         RequireLicenseAcceptance = false,
 
-        Version                  = nugetVersion,
-        Tags                     = new [] {  "ChilliSource", "Xamarin"},
+        Tags                     = new [] {  "ChilliSource", "ChilliSource Xamarin Bindings", "Xamarin"},
         ReleaseNotes             = new [] { string.Format("{0}/releases", githubUrl) },
 
         Symbols                  = false,
@@ -379,7 +378,7 @@ Task("PublishPackages")
 		foreach(var package in packageWhitelist)
 		{
 			// only push the package which was created during this build run.
-			var packagePath = artifactDirectory + File(string.Concat(package, ".", nugetVersion, ".nupkg"));
+			var packagePath = artifactDirectory + File(string.Concat(package.Replace("IOS", "").Replace("ANDROID", ""), ".", nugetVersion, ".nupkg"));
 
 			// Push the package.
 			NuGetPush(packagePath, new NuGetPushSettings {
