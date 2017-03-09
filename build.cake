@@ -226,7 +226,7 @@ Action<string,string> build = (solution, configuration) =>
 ///////////////////////////////////////////////////////////////////////////////
 Setup((context) =>
 {
-    Information("Building version {0} of ChilliSource.Mobile. (isTagged: {1})", informationalVersion, isTagged);
+    Information("Building version {0} of ChilliSource.Mobile.Bindings. (isTagged: {1})", informationalVersion, isTagged);
 
 		if (isTeamCity)
 		{
@@ -277,7 +277,7 @@ Task("UpdateAssemblyInfo")
 	using(BuildBlock("UpdateAssemblyInfo")) 
 	{
 		CreateAssemblyInfo(file, new AssemblyInfoSettings {
-			Product = "ChilliSource Mobile",
+			Product = "ChilliSource Mobile Bindings",
 			Version = majorMinorPatch,
 			FileVersion = majorMinorPatch,
 			InformationalVersion = informationalVersion,
