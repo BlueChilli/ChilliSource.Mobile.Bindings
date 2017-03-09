@@ -314,7 +314,7 @@ Task("Package")
 		foreach(var package in packageWhitelist)
 		{
 			// only push the package which was created during this build run.
-			var packagePath = string.Format("./Nuget/{0}.nuspec", package.Replace("IOS"));
+			var packagePath = string.Format("./Nuget/{0}.nuspec", package);
 
 			// Push the package.
 			Package(packagePath, "./");
@@ -378,7 +378,7 @@ Task("PublishPackages")
 		foreach(var package in packageWhitelist)
 		{
 			// only push the package which was created during this build run.
-			var packagePath = artifactDirectory + File(string.Concat(package, ".", nugetVersion, ".nupkg"));
+			var packagePath = artifactDirectory + File(string.Concat(package.Replace("IOS", "").Replace("ANDROID", ""), ".", nugetVersion, ".nupkg"));
 
 			// Push the package.
 			NuGetPush(packagePath, new NuGetPushSettings {
