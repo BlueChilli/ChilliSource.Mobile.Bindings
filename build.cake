@@ -1,5 +1,6 @@
 using System.Threading;
 using System.Text.RegularExpressions;
+using System.IO;
 //////////////////////////////////////////////////////////////////////
 // ADDINS
 //////////////////////////////////////////////////////////////////////
@@ -25,7 +26,6 @@ if (string.IsNullOrWhiteSpace(target))
 {
     target = "Default";
 }
-
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
@@ -228,24 +228,29 @@ Setup((context) =>
 {
     Information("Building version {0} of ChilliSource.Mobile.Bindings. (isTagged: {1})", informationalVersion, isTagged);
 
-		if (isTeamCity)
-		{
-			Information(
-					@"Environment:
-					 PullRequest: {0}
-					 Build Configuration Name: {1}
-					 TeamCity Project Name: {2}
-					 Branch: {3}",
-					 isPullRequest,
-					 buildConfName,
-					 projectName,
-					 branch
-					);
-        }
-        else
-        {
-             Information("Not running on TeamCity");
-        }
+	if (isTeamCity)
+	{
+		Information(
+				@"Environment:
+				 PullRequest: {0}
+				 Build Configuration Name: {1}
+				 TeamCity Project Name: {2}
+				 Branch: {3}",
+				 isPullRequest,
+				 buildConfName,
+				 projectName,
+				 branch
+				);
+    }
+    else
+    {
+         Information("Not running on TeamCity");
+    }
+
+
+   // CleanDirectories(artifactDirectory);
+
+
 });
 
 Teardown((context) =>
@@ -372,13 +377,12 @@ Task("PublishPackages")
 			}
 		}
 
+		var d = new DirectoryInfo(artifactDirectory);
 
-
-		// only push whitelisted packages.
-		foreach(var package in packageWhitelist)
-		{
+		foreach(var file in d.GetFiles("*.nupkg")) 
+		{			
 			// only push the package which was created during this build run.
-			var packagePath = artifactDirectory + File(string.Concat(package.Replace("IOS", "").Replace("ANDROID", ""), ".", nugetVersion, ".nupkg"));
+			var packagePath = artifactDirectory + File(file.Name);
 
 			// Push the package.
 			NuGetPush(packagePath, new NuGetPushSettings {
