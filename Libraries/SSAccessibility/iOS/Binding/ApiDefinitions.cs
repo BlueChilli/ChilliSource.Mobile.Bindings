@@ -2,7 +2,7 @@ using Foundation;
 using ObjCRuntime;
 using System;
 
-namespace Accessibility
+namespace SSAccessibilityBinding
 {
 	// @interface SSAccessibility : NSObject
 	[BaseType(typeof(NSObject))]

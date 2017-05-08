@@ -6,8 +6,8 @@
     <ProjectGuid>{88DFA69E-2CF8-466C-BBAE-E3E70C050C87}</ProjectGuid>
     <ProjectTypeGuids>{8FFB629D-F513-41CE-95D2-7ECE97B6EEEC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Accessibility</RootNamespace>
-    <AssemblyName>SSAccessibility</AssemblyName>
+    <RootNamespace>SSAccessibilityBindingIOS</RootNamespace>
+    <AssemblyName>SSAccessibilityBindingIOS</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

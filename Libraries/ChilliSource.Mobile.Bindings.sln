@@ -5,7 +5,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICGVideoTrimmerBindingIOS", "ICGVideoTrimmer\iOS\Binding\ICGVideoTrimmerBindingIOS.csproj", "{3EDFB9A5-FE44-4C10-A6FB-BE81C0AD5A74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSAccessibilityIOS", "SSAccessibility\Binding\SSAccessibilityIOS.csproj", "{88DFA69E-2CF8-466C-BBAE-E3E70C050C87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSAccessibilityBindingIOS", "SSAccessibility\iOS\Binding\SSAccessibilityBindingIOS.csproj", "{88DFA69E-2CF8-466C-BBAE-E3E70C050C87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
