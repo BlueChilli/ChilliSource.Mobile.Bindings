@@ -75,7 +75,7 @@ var buildVersion = gitVersion.FullBuildMetaData;
 
 // Artifacts
 var artifactDirectory = "./artifacts/";
-var packageWhitelist = new[] { "ICGVideoTrimmerIOS" };
+var packageWhitelist = new[] { "ICGVideoTrimmerIOS", "SSAccessibilityIOS" };
 
 var buildSolution = "./Libraries/ChilliSource.Mobile.Bindings.sln";
 
