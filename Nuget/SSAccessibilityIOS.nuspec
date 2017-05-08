@@ -15,6 +15,6 @@
     <tags>$tags$</tags>
   </metadata>
   <files>
-    <file src="Libraries/SSAccessibility/iOS/Binding/bin/Release/SSAccessibility.dll" target="lib\Xamarin.iOS10" />
+    <file src="Libraries/SSAccessibility/iOS/Binding/bin/Release/SSAccessibilityIOS.dll" target="lib\Xamarin.iOS10" />
   </files>
 </package>
