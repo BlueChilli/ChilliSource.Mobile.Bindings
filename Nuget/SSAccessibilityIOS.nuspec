@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>SSAccessibility</id>
+    <version>1.0.0</version>
+    <title>SSAccessibility iOS</title>
+    <description>Xamarin iOS Binding for SSAccessibility</description>
+    <authors>$authors$</authors>
+    <owners>$owners$</owners>
+    <requireLicenseAcceptance>$requireLicenseAcceptance$</requireLicenseAcceptance>
+    <copyright>$copyright$</copyright>
+    <projectUrl>$projectUrl$</projectUrl>    
+    <licenseUrl>$licenceUrl$</licenseUrl>
+    <releaseNotes>$releaseNotes$</releaseNotes>
+    <tags>$tags$</tags>
+  </metadata>
+  <files>
+    <file src="Libraries/SSAccessibility/Binding/bin/Release/SSAccessibility.dll" target="lib\Xamarin.iOS10" />
+  </files>
+</package>
