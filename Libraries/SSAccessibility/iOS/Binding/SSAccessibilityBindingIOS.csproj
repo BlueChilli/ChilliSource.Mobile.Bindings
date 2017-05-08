@@ -39,7 +39,7 @@
     <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="..\iOS\Native\Binding\SSAccessibility.framework">
+    <NativeReference Include="..\Native\Binding\SSAccessibility.framework">
       <Kind>Framework</Kind>
       <SmartLink>False</SmartLink>
     </NativeReference>
